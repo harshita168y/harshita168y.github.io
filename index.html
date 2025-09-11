@@ -4,33 +4,44 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Harshita Ramesh – Software Engineer & CV/AI</title>
-  <meta name="description" content="Portfolio of Harshita Ramesh – Software Engineer with 2 years at Cognizant and MEng in Computer Vision & AI (in progress). .NET Core, SQL, Python, Java, CV/AI projects."/>
-  <!-- Tailwind via CDN for speed of setup -->
+  <meta name="description" content="Full-stack & Computer Vision engineer. 2 years at Cognizant. MEng in CV & AI. .NET Core, SQL, Python, Java, CV/AI projects."/>
+  <meta property="og:title" content="Harshita Ramesh – Software Engineer & CV/AI">
+  <meta property="og:description" content="Full-stack & Computer Vision engineer. 2 years at Cognizant. MEng in CV & AI.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b1020">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root{--bg:#0b1020;--card:#121a33;--text:#eaf0ff;--muted:#a8b3d6;--accent:#7c9cff;--chip:#1a2347}
     body{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"}
     .glass{background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));backdrop-filter: blur(8px)}
     .shadow-soft{box-shadow: 0 10px 30px rgba(2,6,23,.35)}
     .chip{background:var(--chip); color:var(--text)}
+    html{scroll-behavior:smooth}
+    .bg-grid:before {
+      content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+      background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 20px 20px;
+      -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,.4), transparent 60%);
+      mask-image: radial-gradient(ellipse at center, rgba(0,0,0,.4), transparent 60%);
+    }
   </style>
 </head>
-<body class="bg-[var(--bg)] text-[var(--text)]">
+<body class="bg-[var(--bg)] text-[var(--text)] bg-grid">
   <!-- Nav -->
   <header class="sticky top-0 z-50 backdrop-blur bg-[rgba(11,16,32,.65)] border-b border-white/10">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="#home" class="font-extrabold tracking-tight text-xl">HR<span class="text-[var(--accent)]">.</span></a>
       <nav class="hidden md:flex gap-6 text-sm text-[var(--muted)]">
-        <a href="#projects" class="hover:text-white">Projects</a>
-        <a href="#skills" class="hover:text-white">Skills</a>
-        <a href="#experience" class="hover:text-white">Experience</a>
-        <a href="#education" class="hover:text-white">Education</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="#projects" class="relative hover:text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[var(--accent)] hover:after:w-full after:transition-all">Projects</a>
+        <a href="#skills" class="relative hover:text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[var(--accent)] hover:after:w-full after:transition-all">Skills</a>
+        <a href="#experience" class="relative hover:text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[var(--accent)] hover:after:w-full after:transition-all">Experience</a>
+        <a href="#education" class="relative hover:text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[var(--accent)] hover:after:w-full after:transition-all">Education</a>
+        <a href="#contact" class="relative hover:text-white after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[var(--accent)] hover:after:w-full after:transition-all">Contact</a>
       </nav>
-      
     </div>
   </header>
 
@@ -38,95 +49,112 @@
   <section id="home" class="pt-16 md:pt-24">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Harshita Ramesh</h1>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight bg-gradient-to-r from-white to-[var(--accent)] bg-clip-text text-transparent">
+          Harshita Ramesh
+        </h1>
         <p class="mt-3 text-lg text-[var(--muted)]">Software Engineer • Computer Vision & AI • ML</p>
-        <p class="mt-6 text-[var(--muted)] max-w-2xl"><strong>Engineer with a passion for AI!!! </strong> <br>I’ve worked on full-stack apps, workflow automation, and real-time computer vision systems. With 2 years at Cognizant and an MEng in CV & AI, I enjoy building practical AI solutions that make technology faster, smarter, and more reliable.<br> I bring hands-on experience in Agile environments, balancing teamwork with independent problem-solving!</p>
-        <div class="mt-6 flex flex-wrap gap-3"> 
-          <a href="https://www.linkedin.com/in/harshita-r-bb354b188" class="chip px-3 py-1 rounded-full text-sm hover:opacity-90">LinkedIn</a>
-          <a href="https://github.com/harshita168y" class="chip px-3 py-1 rounded-full text-sm hover:opacity-90">GitHub</a>
-          <a href="#projects" class="chip px-3 py-1 rounded-full text-sm hover:opacity-90">See Projects</a>
-          <a href="Harshita Ramesh.pdf" download="Harshita_Ramesh_CV.pdf" class="chip px-3 py-1 rounded-full text-sm hover:opacity-90">Download Resume</a>
+        <p class="mt-6 text-[var(--muted)] max-w-2xl">
+          <strong>Engineer with a passion for AI</strong> <br>
+          I’ve worked on full-stack apps, workflow automation, and real-time computer vision systems. With 2 years at Cognizant and an MEng in CV & AI, I enjoy building practical AI solutions that make technology faster, smarter, and more reliable.<br>
+          I bring hands-on experience in Agile environments, balancing teamwork with independent problem-solving.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="https://www.linkedin.com/in/harshita-r-bb354b188" class="chip px-3 py-1 rounded-full text-sm hover:opacity-90 hover:ring-2 hover:ring-[var(--accent)]/40 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]">LinkedIn</a>
+          <a href="https://github.com/harshita168y" class="chip px-3 py-1 rounded-full text-sm hover:opacity-90 hover:ring-2 hover:ring-[var(--accent)]/40 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]">GitHub</a>
+          <a href="#projects" class="chip px-3 py-1 rounded-full text-sm hover:opacity-90 hover:ring-2 hover:ring-[var(--accent)]/40 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]">See Projects</a>
+          <a href="Harshita_Ramesh_CV.pdf" download="Harshita_Ramesh_CV.pdf" class="chip px-3 py-1 rounded-full text-sm hover:opacity-90 hover:ring-2 hover:ring-[var(--accent)]/40 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]">Download Resume</a>
         </div>
       </div>
       <div>
-        <div class="glass shadow-soft rounded-3xl p-6 border border-white/10">
+        <div class="glass shadow-soft rounded-3xl p-6 border border-white/10 ring-1 ring-white/5 bg-gradient-to-b from-white/5 to-white/0">
           <h3 class="font-semibold text-xl mb-4">Fast facts</h3>
           <ul class="space-y-3 text-[var(--muted)]">
-            <li>✅ <strong>Full‑stack:</strong> .NET Core, C#, SQL, Java, REST APIs</li>
-            <li>✅ <strong>CV/AI:</strong> OpenCV, TensorFlow, PyTorch, MediaPipe; edge‑AI on Raspberry Pi</li>
-            <li>🚀 Shipped 6+ web & edge‑AI projects; boosted CRUD performance ~50% and automated ~15 hrs/month of manual work</li>
+            <li>✅ <strong>Full-stack:</strong> .NET Core, C#, SQL, Java, REST APIs</li>
+            <li>✅ <strong>CV/AI:</strong> OpenCV, TensorFlow, PyTorch, MediaPipe; edge-AI on Raspberry Pi</li>
+            <li>🚀 Shipped 6+ web & edge-AI projects; boosted CRUD performance ~50% and automated ~15 hrs/month of manual work</li>
             <li>🛠️ Modernised MS Access/VBA to web apps → lower maintenance, higher reliability</li>
             <li>🎓 <strong>MEng in Computer Vision & AI</strong>, University of Limerick — <strong>Completed Aug 2025</strong></li>
-            <li>🌍 Ireland‑based • Open to EU & Remote</li>
+            <li>🌍 Ireland-based • Open to EU & Remote</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
- 
-<!-- Projects -->
-<section id="projects" class="mt-20 md:mt-28">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="flex items-end justify-between">
-      <h2 class="text-3xl md:text-4xl font-extrabold">Selected Projects</h2>
-      <a href="https://github.com/harshita168y" class="text-sm text-[var(--accent)] hover:underline">More on GitHub →</a>
-    </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-      <!-- Exercise Monitoring -->
-      <article class="rounded-2xl border border-white/10 bg-[var(--card)] p-5 hover:-translate-y-0.5 transition">
-        <div class="aspect-video rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12h12M6 8v8M18 8v8M3 10v4M21 10v4" />
-          </svg>
-        </div>
-        <h3 class="mt-4 font-bold text-xl">Exercise Monitoring (Android + MediaPipe)</h3>
-        <p class="mt-2 text-[var(--muted)]">Real-time rep tracking with audio feedback. Achieved <strong>>95% accuracy</strong> across multiple exercises.</p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="chip px-2 py-1 rounded-full">Kotlin</span>
-          <span class="chip px-2 py-1 rounded-full">MediaPipe</span>
-          <span class="chip px-2 py-1 rounded-full">Android</span>
-        </div>
-        <div class="mt-4 flex gap-4"><a class="inline-block text-[var(--accent)] hover:underline" href="https://github.com/harshita168y/Exercise-Monitoring-and-Pose-Estimation">Repo →</a></div>
-      </article>
-      <!-- Hand Gesture Interface -->
-      <article class="rounded-2xl border border-white/10 bg-[var(--card)] p-5 hover:-translate-y-0.5 transition">
-        <div class="aspect-video rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <rect x="7" y="2" width="10" height="20" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M11 18h2" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        </div>
-        <h3 class="mt-4 font-bold text-xl">Hand Gesture Interface (Edge)</h3>
-        <p class="mt-2 text-[var(--muted)]">Lightweight models for low-power devices with <strong>>90% accuracy</strong> and real-time interaction.</p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="chip px-2 py-1 rounded-full">Python</span>
-          <span class="chip px-2 py-1 rounded-full">OpenCV</span>
-          <span class="chip px-2 py-1 rounded-full">Raspberry Pi</span>
-        </div>
-        <div class="mt-4 flex gap-4"><a class="inline-block text-[var(--accent)] hover:underline" href="https://github.com/harshita168y/ComputerVisionProjects/tree/main/GestureDetection/project">Repo →</a></div>
-      </article>
-      <!-- Real-Time Crowd/Object Detection -->
-      <article class="rounded-2xl border border-white/10 bg-[var(--card)] p-5 hover:-translate-y-0.5 transition">
-        <div class="aspect-video rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 flex items-center justify-center">
-          <!-- Improved Users/People Icon -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14c-4 0-6 2-6 4v1h12v-1c0-2-2-4-6-4zM19 16v1h2v-1a4 4 0 00-2-3.46M5 16v1H3v-1a4 4 0 012-3.46" />
-          </svg>
-        </div>
-        <h3 class="mt-4 font-bold text-xl">Real-Time Crowd/Object Detection</h3>
-        <p class="mt-2 text-[var(--muted)]">Raspberry Pi system tracking and labelling dynamic crowd movement within ~20s.</p>
-        <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="chip px-2 py-1 rounded-full">PyTorch</span>
-          <span class="chip px-2 py-1 rounded-full">TensorFlow</span>
-          <span class="chip px-2 py-1 rounded-full">Edge AI</span>
-        </div>
-        <div class="mt-4 flex gap-4"><a class="inline-block text-[var(--accent)] hover:underline" href="https://github.com/harshita168y/ComputerVisionProjects/tree/main/RealTimeDetection">Repo →</a></div>
-      </article>
-    </div>
-  </div>
-</section>
+  <!-- Divider -->
+  <div class="mt-16 border-t border-white/10"></div>
 
+  <!-- Projects -->
+  <section id="projects" class="mt-20 md:mt-28">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-end justify-between">
+        <h2 class="text-3xl md:text-4xl font-extrabold">Selected Projects</h2>
+        <a href="https://github.com/harshita168y" class="text-sm text-[var(--accent)] hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]">More on GitHub →</a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <!-- Exercise Monitoring -->
+        <article class="group rounded-2xl border border-white/10 bg-[var(--card)] p-5 transition transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(124,156,255,.15)]">
+          <div class="aspect-video rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white transition-transform duration-300 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 12h12M6 8v8M18 8v8M3 10v4M21 10v4" />
+            </svg>
+          </div>
+          <h3 class="mt-4 font-bold text-xl">Exercise Monitoring (Android + MediaPipe)</h3>
+          <p class="mt-2 text-[var(--muted)]">Real-time rep tracking with audio feedback. Achieved <strong>&gt;95% accuracy</strong> across multiple exercises.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="chip px-2 py-1 rounded-full">Kotlin</span>
+            <span class="chip px-2 py-1 rounded-full">MediaPipe</span>
+            <span class="chip px-2 py-1 rounded-full">Android</span>
+          </div>
+          <div class="mt-4 flex gap-4">
+            <a class="inline-block text-[var(--accent)] hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]" href="https://github.com/harshita168y/Exercise-Monitoring-and-Pose-Estimation">Repo →</a>
+          </div>
+        </article>
+
+        <!-- Hand Gesture Interface -->
+        <article class="group rounded-2xl border border-white/10 bg-[var(--card)] p-5 transition transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(124,156,255,.15)]">
+          <div class="aspect-video rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 11V6a2 2 0 1 1 4 0v5h1V5a2 2 0 1 1 4 0v6h1V7a2 2 0 1 1 4 0v9a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5v-5h1z"/>
+            </svg>
+          </div>
+          <h3 class="mt-4 font-bold text-xl">Hand Gesture Interface (Edge)</h3>
+          <p class="mt-2 text-[var(--muted)]">Lightweight models for low-power devices with <strong>&gt;90% accuracy</strong> and real-time interaction.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="chip px-2 py-1 rounded-full">Python</span>
+            <span class="chip px-2 py-1 rounded-full">OpenCV</span>
+            <span class="chip px-2 py-1 rounded-full">Raspberry Pi</span>
+          </div>
+          <div class="mt-4 flex gap-4">
+            <a class="inline-block text-[var(--accent)] hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]" href="https://github.com/harshita168y/ComputerVisionProjects/tree/main/GestureDetection/project">Repo →</a>
+          </div>
+        </article>
+
+        <!-- Real-Time Crowd/Object Detection -->
+        <article class="group rounded-2xl border border-white/10 bg-[var(--card)] p-5 transition transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(124,156,255,.15)]">
+          <div class="aspect-video rounded-xl bg-gradient-to-r from-pink-500 to-rose-600 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white transition-transform duration-300 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14c-4 0-6 2-6 4v1h12v-1c0-2-2-4-6-4zM19 16v1h2v-1a4 4 0 00-2-3.46M5 16v1H3v-1a4 4 0 012-3.46" />
+            </svg>
+          </div>
+          <h3 class="mt-4 font-bold text-xl">Real-Time Crowd/Object Detection</h3>
+          <p class="mt-2 text-[var(--muted)]">Raspberry Pi system tracking and labelling dynamic crowd movement within ~20s.</p>
+          <div class="mt-3 flex flex-wrap gap-2 text-xs">
+            <span class="chip px-2 py-1 rounded-full">PyTorch</span>
+            <span class="chip px-2 py-1 rounded-full">TensorFlow</span>
+            <span class="chip px-2 py-1 rounded-full">Edge AI</span>
+          </div>
+          <div class="mt-4 flex gap-4">
+            <a class="inline-block text-[var(--accent)] hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]" href="https://github.com/harshita168y/ComputerVisionProjects/tree/main/RealTimeDetection">Repo →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="mt-16 border-t border-white/10"></div>
 
   <!-- Skills -->
   <section id="skills" class="mt-20 md:mt-28">
@@ -147,11 +175,14 @@
         </div>
         <div class="rounded-2xl border border-white/10 bg-[var(--card)] p-5">
           <h4 class="font-semibold">Practices</h4>
-          <p class="mt-2 text-[var(--muted)]">Agile/Scrum, Documentation, Problem Solving, Team Person, Test-Driven Development (TDD), Code Reviews, Version Control (Git branching strategies), Mentoring/Knowledge sharing. </p>
+          <p class="mt-2 text-[var(--muted)]">Agile/Scrum, Documentation, Problem Solving, Team Collaboration, TDD, Code Reviews, Git Branching, Knowledge Sharing</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Divider -->
+  <div class="mt-16 border-t border-white/10"></div>
 
   <!-- Experience -->
   <section id="experience" class="mt-20 md:mt-28">
@@ -168,7 +199,7 @@
             <li>Migrated legacy MS Access/VBA apps to modern web stacks; reduced maintenance and increased reliability.</li>
             <li>Automated email & DB tasks; saved ~15 hours/month manual effort.</li>
             <li>Created documentation and Disaster Recovery guides to improve operational resilience.</li>
-            <li>Worked in Agile/Scrum teams, delivering production releases on time and improving collaboration across dev & QA</li>
+            <li>Worked in Agile/Scrum teams, delivering production releases on time and improving collaboration across dev & QA.</li>
           </ul>
         </div>
         <div class="rounded-2xl border border-white/10 bg-[var(--card)] p-5">
@@ -183,6 +214,9 @@
       </div>
     </div>
   </section>
+
+  <!-- Divider -->
+  <div class="mt-16 border-t border-white/10"></div>
 
   <!-- Education -->
   <section id="education" class="mt-20 md:mt-28">
@@ -205,12 +239,15 @@
     </div>
   </section>
 
+  <!-- Divider -->
+  <div class="mt-16 border-t border-white/10"></div>
+
   <!-- Contact -->
   <section id="contact" class="mt-20 md:mt-28 mb-24">
     <div class="max-w-6xl mx-auto px-4">
       <div class="rounded-3xl border border-white/10 bg-gradient-to-r from-[var(--card)] to-[#0f1630] p-8 md:p-10 shadow-soft">
         <h2 class="text-3xl md:text-4xl font-extrabold">Let’s build something!!</h2>
-        <p class="mt-2 text-[var(--muted)]">Reach me at <a class="text-[var(--accent)] hover:underline" href="mailto:harshitaharshi1608@gmail.com">harshitaharshi1608@gmail.com</a> or connect on <a class="text-[var(--accent)] hover:underline" href="https://www.linkedin.com/in/harshita-r-bb354b188">LinkedIn</a>.</p>
+        <p class="mt-2 text-[var(--muted)]">Reach me at <a class="text-[var(--accent)] hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]" href="mailto:harshitaharshi1608@gmail.com">harshitaharshi1608@gmail.com</a> or connect on <a class="text-[var(--accent)] hover:underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent)] focus:ring-offset-[var(--bg)]" href="https://www.linkedin.com/in/harshita-r-bb354b188">LinkedIn</a>.</p>
       </div>
     </div>
   </section>
@@ -222,4 +259,3 @@
   </script>
 </body>
 </html>
-
